@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/63f8e99523.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#">Services</a></li> -->
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Nithya Ravishini</span></h1>
+            <img src="images/background.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<!--------------About-------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/About me.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1><br>
+                <p>I am an undergraduate in the field of Information
+                    technology in SLIIT. As a fulfillment for my study
+                    requirement, I intend to work towards in the same
+                    industry for my career development and to learn
+                    new skills.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education')">Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>2021 - Present</span><br><br>Undergraduate at Srilanka Institute of Information Technology (SLIIT) in B.Sc (Hons) Information Technology.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>07/ 2023 - 01/ 2024</span><br><br>Software Engineer Instern at CIC Holdings PLC.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Web Design for Beginners</span><br><br>Certificate course at University of Moratuwa</li>
+                            <li><span>Front-end Web Development</span><br><br>Certificate course at University of Moratuwa</li>
+                            <li><span>Back-end Web Development Using JavaScript and Node.js</span><br><br>Shape AI</li>
+                            <li><span>Basic Web Development with HTML, CSS, JS</span><br><br>Shape AI</li>
+                            <li><span>Advanced Search Engine Optimization</span><br><br>Certificate course in Simplilern</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------Services-------------->
+<!-- <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laudantium, id minus. Perspiciatis voluptates harum ad est, 
+                    nobis dolores provident voluptate atque iusto, quibusdam minus quidem eos, 
+                    itaque quam! Provident, unde.</p>
+                    <a href="#">leran more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laudantium, id minus. Perspiciatis voluptates harum ad est, 
+                    nobis dolores provident voluptate atque iusto, quibusdam minus quidem eos, 
+                    itaque quam! Provident, unde.</p>
+                    <a href="#">leran more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Laudantium, id minus. Perspiciatis voluptates harum ad est, 
+                    nobis dolores provident voluptate atque iusto, quibusdam minus quidem eos, 
+                    itaque quam! Provident, unde.</p>
+                    <a href="#">leran more</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!--------------Portfolio-------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/LoMS.jpeg">
+                    <div class="layer">
+                        <h3>Logistic Management System</h3>
+                        <p>Company project: developed a web-based application for
+                            Logistic Department. Technology Used: ASP.NET, C# , SQL</p>
+                        <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/MPA.jpg">
+                    <div class="layer">
+                        <h3>Medical Promotion Approval System</h3>
+                        <p>Company project: developed a web-based application for
+                            Finance Department. Technology Used: ASP.NET, C# , SQL</p>
+                        <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/HMS.png">
+                    <div class="layer">
+                        <h3>Hotel Management System</h3>
+                        <p>Uni project: developed a web-based application for Hotel
+                            management. Technology using MERN Stack</p>
+                        <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/FOA.png">
+                    <div class="layer">
+                        <h3>Online Food Order App</h3>
+                        <p>Uni project: Developed a web application for online food
+                            ordering. Technology Used: Spring boot</p>
+                        <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Online Voting System for Reality Shows</h3>
+                        <p>Uni project - Developed a web application for
+                            online voting for reality shows.
+                            Technology Used - HTML, CSS, Java script,
+                            PHP</p>
+                        <!-- <a href="#"><i class="fa-solid fa-link"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+</div>
+<!--------------Contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0776607219</p>
+                <p><i class="fa-brands fa-linkedin"></i> Nithya Ravishini</p>
+                <p><i class="fa-brands fa-github"></i> Nithya Ravishini & Abeysinghe.A.A.N.R.</p>
+                <!-- <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div> -->
+                <a href="images/NIthya Abeysinghe CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Nithya.</p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right="0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzRqUiGTIpzdr5ZukOjb0BO3MevcxC_b5phQfwnYIHN-unPP9WNPD1bI1t12T6rfe0L6g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    constmsg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
